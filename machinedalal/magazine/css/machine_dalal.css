@@ -1,0 +1,1183 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('../fonts/Times New Roman.ttf') format('TrueType');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.ttf') format('TrueType');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('../fonts/Montserrat-Light.ttf') format('TrueType');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Garamond-Regular';
+    src: url('../fonts/Garamond-Regular.ttf') format('TrueType');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelveticaNeue-Bold';
+    src: url('../fonts/HelveticaNeue-Bold.ttf') format('TrueType');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelveticaNeue-Medium';
+    src: url('../fonts/HelveticaNeue-Medium.ttf') format('TrueType');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelveticaNeue-Regular';
+    src: url('../fonts/HelveticaNeue-Regular.ttf') format('TrueType');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    /*margin: 0 auto !important;
+	width: 1920px;*/
+    float: none;
+    font-family: 'Montserrat-Light';
+    font-size: 14px;
+    line-height: 21px;
+    /*display: table;*/
+    background: #fff !important;
+    /*box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1803921568627451);*/
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus {
+    outline: 0 auto -webkit-focus-ring-color;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+a:-webkit-any-link {
+    text-decoration: none;
+}
+.footer-box {
+    background: #1F2024;
+    padding: 40px 0;
+    width: 100%;
+    float: left;
+}
+.footer-box p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+.footer_list {
+    padding: 0;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+}
+.download_section .play_store {
+    display: flex;
+    width: 50%;
+}
+.play_store a {
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.30980392156862746);
+}
+.download_section .play_store a img {
+    vertical-align: middle;
+}
+.footer_list li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.footer_list li a {
+    color: #fff;
+}
+.footer_list li a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.footer_list:focus, .footer_list li a:focus {
+    outline: 0 auto -webkit-focus-ring-color;
+    outline-offset: 0;
+    text-decoration: none;
+}
+.box-first {
+    width: 175px;
+    height: 33.25px;
+    margin-bottom: 30px;
+}
+.footer-bottom {
+    width: 100%;
+    float: left;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+    margin-top: 25px;
+}
+.footer_right {
+    float: right;
+}
+.red_text:hover {
+    color: #DB271F;
+}
+.footer-bottom p {
+    margin: 0;
+    font-family: 'Montserrat-Light';
+    font-size: 13px;
+}
+.footer-play_store {
+    width: 60%;
+    display: flex;
+}
+.footer-play_store a img {
+    width: 16%;
+    vertical-align: sub;
+}
+.footer-play_store a {
+    padding: 8px;
+    width: auto;
+    float: left;
+    border-radius: 3px;
+    background: #db271f;
+    margin-right: 10px;
+    text-align: center;
+}
+.footer-play_store a:last-child {
+    margin-right: 0;
+}
+.footer-play_store a span {
+    color: #fff;
+    font-family: 'Montserrat-Light';
+    margin-left: 5px;
+    font-size: 15px;
+    line-height: 20px;
+}
+.footer_right .fav_icon {
+    vertical-align: bottom;
+    font-size: 18px;
+    color: #DB271F;
+}
+span.footer-link {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+/*======== SOCIAL MEDIA LINKS CSS START ======*/
+.social_links {
+    display: flex;
+    margin-top: 20px;
+}
+.links_list {
+    margin-right: 25px;
+}
+.links_list:last-child {
+    margin-right: 0;
+}
+.links_list img {
+    width: auto;
+    height: 25px;
+}
+.social_links img {
+    height: 20px;
+    /* width: 19px; */
+}
+/*========= SOCIAL MEDIA LINKS CSS END ========*/
+/*=============== Edition / ISSUES START CSS  ==================*/
+.issues_sec {
+    width: 100%;
+    float: left;
+    padding: 50px 0;
+}
+.subscribe_Box {
+    width: 100%;
+    float: left;
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin-bottom: 40px;
+    border: 1px solid #e4e4e4;
+    border-top: 5px solid #000000;
+    border-radius: 0px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 10%);
+}
+.subscribe_Box h4 {
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #000000;
+    font-family: 'Montserrat-Bold';
+}
+.subscribe_Box p {
+    font-family: 'HelveticaNeue-Bold';
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+.subscribe_Box p.small_txt {
+    font-family: 'Garamond-Regular';
+    margin-top: 0;
+    font-size: 17px;
+    line-height: 22.66px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+.subscribe_Box .input_box {
+    position: relative;
+}
+.subscribe_Box .input_box input {
+    width: 100%;
+    border: 1px solid #ece9e9;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #fff;
+    font-family: 'HelveticaNeue-Regular';
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+.input_box .error_msg {
+    color: #db2720;
+    font-size: 14px;
+    line-height: 18px;
+    position: absolute;
+    left: 3px;
+    bottom: -11px;
+    display: none;
+}
+.subscribe_Box .submit_btn {
+    background-color: #db271f;
+    padding: 10px 30px;
+    color: #fff;
+    border: 1px solid #db271f;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 3px;
+    outline: 0px;
+    display: inline-block;
+    font-family: 'HelveticaNeue-Light';
+    text-decoration: none;
+    margin-top: 13px;
+}
+.subscribe_Box .after_subsMsg {
+    width: 100%;
+    float: left;
+    text-align: left;
+    background: #db271f;
+    border: 1px solid #db271f;
+    padding: 10px;
+    border-radius: 2px;
+    margin-top: 15px;
+    display: none;
+}
+.subscribe_Box .after_subsMsg p {
+    font-family: 'Montserrat-Light';
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+.sidebar_boxes h4.subs_txt {
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #000000;
+    font-family: 'Montserrat-Bold';
+}
+.sidebar_boxes {
+    width: 100%;
+    float: left;
+    /* border: 4px solid #ececec; */
+    /* padding: 20px; */
+}
+.sidebar_boxes .pop_section {
+    display: flex;
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+}
+.pop_section .left_img {
+    width: 30%;
+    float: left;
+    background-color: #f6f6f6;
+    border: 1px solid #e6e5e5;
+    padding: 5px;
+}
+.pop_section .left_img a,
+.pop_section .right_content a {
+    text-decoration: none;
+}
+.pop_section .right_content {
+    width: 70%;
+    float: right;
+    padding-left: 15px;
+}
+.pop_section .left_img p {
+    font-family: 'Montserrat-Light';
+    margin-top: 0;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+.pop_section .left_img img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+.pop_section .right_content h3 {
+    font-size: 17px;
+    line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #000000;
+    font-family: 'Montserrat-Bold';
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.pop_section .right_content p {
+    font-family: 'Times New Roman';
+    font-size: 16px;
+    line-height: 21.33px;
+    letter-spacing: 0.5px;
+    color: #000000;
+    margin-bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+.MacDesign_box .rightSide_boxes {
+    width: 100%;
+    float: left;
+}
+.rightSide_boxes .pop_section {
+    display: flex;
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+}
+.rightSide_boxes .pop_section .left_img img {
+    height: 120px;
+}
+.rightSide_boxes .pop_section .left_img {
+    width: 30%;
+    padding: 0;
+    background: none;
+}
+.rightSide_boxes .pop_section .right_content {
+    width: 70%;
+    float: right;
+    padding-left: 25px;
+}
+.rightSide_boxes .pop_section .right_content h3 {
+    font-size: 20px;
+    line-height: 27px;
+}
+.pop_section .right_content p {
+    font-size: 17px;
+    line-height: 22px;
+}
+.viewMore_div {
+    width: 100%;
+    float: left;
+}
+.viewMore_div .viewMore_btn {
+    background-color: #db271f;
+    padding: 10px 30px;
+    color: #fff;
+    border: 1px solid #db271f;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 3px;
+    outline: 0px;
+    display: inline-block;
+    font-family: 'Montserrat-Light';
+    text-decoration: none;
+}
+/*================== Edition / ISSUES END CSS ====================*/
+/*=================== ISSUES DETAIL START CSS ====================*/
+.issue_detailBox {
+    width: 100%;
+    float: left;
+    margin: 0;
+}
+.issue_detailBox .issue_bg {
+    background: url("../magazinesImages/october-issue.jpg")no-repeat;
+    height: 820px;
+    position: relative;
+    padding: 30px;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid #ececec;
+}
+.issue_detailBox .logo_Box {
+    background-color: #db271f;
+    position: absolute;
+    left: 0;
+    right: 20%;
+    bottom: 16%;
+    padding: 30px;
+}
+.logo_Box img {
+    width: 50px;
+}
+.logo_Box span {
+    font-family: 'Montserrat-Regular';
+    margin-left: 10px;
+    font-size: 30px;
+    margin-top: 10px;
+    position: relative;
+    top: 7px;
+    color: #fff;
+}
+.issue_name {
+    background-color: #db271f;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 15px 20px;
+    border-radius: 2px;
+}
+.issue_name p {
+    font-family: 'Montserrat-Regular';
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+.issue_no {
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px #00000033;
+}
+.issue_no p {
+    font-family: 'Montserrat-Regular';
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 0;
+}
+.issue_detailBox h1 {
+    font-size: 25px;
+    line-height: 33.33px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: #ffffff;
+    font-family: 'Montserrat-Regular';
+}
+.Description__Box {
+    background-color: #ffffff;
+    padding: 15px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.Description__Box p {
+    margin-top: 0;
+    color: #000000;
+    margin-bottom: 0;
+}
+.detail_bg .heading_box {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.heading_box h2 {
+    font-size: 25px;
+    line-height: 33.33px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #000000;
+    font-family: 'Montserrat-Bold';
+}
+.previous_issue {
+    width: 100%;
+    float: left;
+}
+.issue_discription {
+    width: 50%;
+    float: left;
+    padding-left: 20px;
+}
+.sepIssue_bg {
+    background: url("../magazinesImages/sep_issue.jpg")no-repeat;
+    height: 250px;
+    width: 50%;
+    float: left;
+    position: relative;
+    padding: 30px;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid #ececec;
+}
+.previous_issue .issue_name {
+    background-color: #db271f;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+.previous_issue .logo_Box img {
+    width: 25px;
+}
+.previous_issue .logo_Box span {
+    margin-left: 5px;
+    font-size: 16px;
+    top: 1px;
+}
+.issue_detailBox .previous_issue h1 {
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 10px;
+}
+.issue_detailBox .previous_issue .logo_Box {
+    left: 0;
+    right: 15%;
+    bottom: 6%;
+    padding: 10px;
+}
+.previous_issue .issue_discription p {
+    margin-top: 0;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 0;
+}
+.previous_issue .issue_no p {
+    font-size: 12px;
+    line-height: 15px;
+}
+.previous_issue .issue_name p {
+    font-size: 13px;
+    line-height: 22px;
+}
+/*============== ISSUES DETAIL END CSS  ===============*/
+/*============= MAGAZINE DESIGN CSS START ================*/
+.header_machMagazine {
+    padding: 0;
+    line-height: 40px;
+    background: #fff;
+    margin: 0 auto;
+    z-index: 99;
+    position: relative;
+}
+.machine_magazine {
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+}
+.machine_magazine ul.Left_list {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+    width: 100%;
+    float: left;
+    display: flex;
+}
+.machine_magazine ul.Left_list li {
+    padding-right: 25px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.machine_magazine ul.Left_list li a {
+    font-family: 'HelveticaNeue-Bold';
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.machine_magazine ul.Right_list {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+    float: right;
+    display: flex;
+    text-align: right;
+}
+.machine_magazine ul.Right_list li {
+    padding-left: 25px;
+    font-family: 'Montserrat-Bold';
+    font-size: 16px;
+    line-height: 24px;
+}
+.machine_magazine ul.Right_list li a {
+    font-family: 'HelveticaNeue-Bold';
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.machine_magazine ul.Right_list li a img {
+    width: 17px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.machine_magazine ul.Right_list li.search_div span.search_icon {
+    vertical-align: bottom;
+    font-size: 22px;
+}
+.machine_logo {
+    width: 100%;
+    float: left;
+    padding-top: 20px;
+    border-top: 2px solid #e6e4e4;
+    border-bottom: 2px solid #e6e4e4;
+    padding-bottom: 15px;
+}
+.machine_logo .logo_img {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.machine_logo .logo_img img {
+    width: 110px;
+    margin-bottom: 20px;
+}
+.machine_logo h1 {
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    line-height: 55px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    float: left;
+}
+.bottom_header {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #e6e4e4;
+}
+.bottom_header ul.bHeader_list {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+    float: none;
+    display: flex;
+    justify-content: center;
+}
+.bottom_header ul.bHeader_list li {
+    padding: 0 25px;
+    font-size: 16px;
+    line-height: 25px;
+}
+.bottom_header ul.bHeader_list li a {
+    font-family: 'Montserrat-Bold';
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.magazine_sec {
+    width: 100%;
+    float: left;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.news_listBox {
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+}
+.news_listBox .maga_box h1 {
+    font-family: 'Times New Roman';
+    font-size: 32px;
+    line-height: 40px;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.news_listBox .maga_box h1 a {
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+}
+.news_listBox .maga_box.single_line h1 {
+    -webkit-line-clamp: 1;
+}
+.news_listBox .maga_box.three_lines h1 {
+    -webkit-line-clamp: 3;
+}
+.news_listBox .maga_box h6 {
+    font-family: 'Montserrat-Bold';
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.maga_box {
+    margin-bottom: 35px !important;
+}
+.maga_box .magaImg_box {
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+.maga_box .magaImg_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.maga_box p {
+    font-family: 'Montserrat-Regular';
+    font-size: 14px;
+    line-height: 22px;
+    color: #000000;
+}
+.maga_box a {
+    color: #ffffff;
+}
+.magaImg_labels {
+    background-color: #dc2720;
+    color: #ffffff;
+    display: inline-block;
+    padding: 13px 15px;
+    border-radius: 0;
+    position: absolute;
+    bottom: 40px;
+    left: -10px;
+}
+.magaImg_labels p {
+    font-family: 'Montserrat-Regular';
+    font-size: 13px;
+    line-height: 15px;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+p a.red_button {
+    background-color: #b00003;
+    color: #ffffff;
+    display: inline-block;
+    padding: 13px 15px;
+    border-radius: 0;
+    font-family: 'Montserrat-Regular';
+    font-size: 13px;
+    line-height: 15px;
+}
+.advertisement_box {
+    width: 100%;
+    float: left;
+}
+.advertisement_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.img_box {
+    max-height: 600px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.blog-detail.news_listBox .maga_box h1 {
+    font-size: 39px;
+    line-height: 50px;
+}
+.blog-detail.news_listBox .maga_box h6 {
+    text-transform: inherit;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: inherit;
+}
+.side-bar-blog h3 a {
+    font-size: 17px;
+    color: #000;
+}
+.side-bar-blog {
+    border-bottom: 1px dashed #ccc;
+}
+.side-bar-blog h6 {
+    font-family: 'Montserrat-Bold';
+}
+.img-desc {
+    font-size: 14px;
+    margin-top: 4px;
+}
+.img-desc span {
+    color: #000;
+    font-weight: bold;
+}
+.maga_box p.article_p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    height: 87px;
+}
+/*================= MAGAZINE DESIGN CSS END =================*/
+/*============ FEBRUARY EDITION CSS START ==========*/
+.issue_detailBox .february_issue_bg {
+    background-color: #fff8ed;
+    width: 100%;
+    border: 1px solid #e4e4e4;
+    border-radius: 0px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 8%);
+}
+.issue_no_head {
+    padding: 15px 20px;
+    background-color: #000000;
+    color: #ffffff;
+}
+.issue_no_head p {
+    font-family: 'Garamond-Regular';
+    font-size: 25px;
+    line-height: 28px;
+    text-align: right;
+    margin-bottom: 0;
+    color: #ffffff;
+    font-weight: normal;
+}
+.Logo_box p {
+    text-align: center;
+    margin-bottom: 0;
+    padding: 50px 20px;
+}
+.Logo_box p img {
+    width: 75px;
+    margin-right: 5px;
+}
+.Logo_box p span {
+    font-family: 'HelveticaNeue-Medium';
+    font-size: 42px;
+    color: #000000;
+    vertical-align: text-top;
+}
+.Descri_Box {
+    padding: 20px;
+}
+.Descri_Box .issue_nme {
+    font-family: 'HelveticaNeue-Regular';
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    color: #989898;
+}
+.Descri_Box h2 {
+    font-family: 'HelveticaNeue-Bold';
+    font-size: 27px;
+    line-height: 40px;
+    color: #000000;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+.Descri_Box p {
+    font-family: 'Garamond-Regular';
+    margin-top: 0;
+    font-size: 17px;
+    line-height: 22.66px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+.about_Msec {
+    clear: both;
+    border: 1px solid #d5d5d5;
+    border-top: 3px solid #000000;
+    border-radius: 0px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 10%);
+    margin: 50px 0;
+}
+.about_heading h3 {
+    font-family: 'Garamond-Regular';
+    font-size: 32px;
+    line-height: 42px;
+    margin: 0;
+    color: #000000;
+}
+.about_heading {
+    padding: 15px;
+    border-bottom: 2px solid #e2e2e2;
+}
+.about_content {
+    padding: 15px;
+}
+.magazine_image img, .about_content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.About_DBox {
+    margin-top: 15px;
+}
+.About_DBox h2 {
+    font-family: 'HelveticaNeue-Bold';
+    font-size: 27px;
+    line-height: 40px;
+    color: #000000;
+    margin-bottom: 2px;
+    margin-top: 0;
+}
+.About_DBox .issue_nme {
+    font-family: 'HelveticaNeue-Regular';
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    color: #989898;
+}
+.About_DBox p {
+    font-family: 'Garamond-Regular';
+    margin-top: 0;
+    font-size: 17px;
+    line-height: 22.66px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+.previous_card {
+    border: 1px solid #d5d5d5;
+    border-top: 5px solid #000000;
+    border-radius: 0px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 10%);
+    height: 100%;
+}
+.previous_card .Pcard_name {
+    padding: 15px;
+    border-bottom: 2px solid #e2e2e2;
+}
+.Pcard_name h3 {
+    font-family: 'Garamond-Regular';
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0;
+    color: #000000;
+}
+.previous_card .Pcard_content {
+    padding: 15px;
+}
+.Pcard_content .img_card {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+.Pcard_content .img_card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.issue_count {
+    background-color: #db271f;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    padding: 6px 20px;
+    box-shadow: -10px 10px 10px #00000026;
+}
+.issue_count span {
+    font-family: 'HelveticaNeue-Light';
+    color: #ffffff;
+    font-size: 14px;
+}
+.previous_issues {
+    display: flex;
+    margin-bottom: 10px;
+}
+.Pcard_content h4 {
+    font-family: 'HelveticaNeue-Bold';
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.Pcard_content p {
+    font-family: 'Garamond-Regular';
+    font-size: 17px;
+    line-height: 22.66px;
+    color: #000000;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    width: 100%;
+    height: 88px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+.issues_slider {
+    width: 95%;
+    margin: 0 auto;
+}
+.issues_slider .carousel-control.left {
+    background: unset;
+    left: -40px;
+    color: #e2e2e2;
+    opacity: 1;
+    width: 5%;
+    text-shadow: none;
+    font-weight: normal;
+}
+.issues_slider .carousel-control.right {
+    background: unset;
+    right: -40px;
+    color: #e2e2e2;
+    opacity: 1;
+    width: 5%;
+    text-shadow: none;
+    font-weight: normal;
+}
+.machines_dtlTable {
+    margin: 30px 0;
+    border: 1px solid #dddddd;
+    border-top: 0;
+}
+.machines_dtlTable tbody tr td {
+    border-right: 1px solid #dddddd;
+    padding: 5px 20px;
+    vertical-align: middle;
+}
+.machines_dtlTable tr:last-child {
+    border-right: 0;
+}
+.machines_dtlTable tbody tr td h4 {
+    font-family: 'Montserrat-Bold';
+    font-size: 15px;
+    margin: 0;
+}
+.machines_dtlTable thead tr th {
+    padding: 0;
+    border: 0;
+}
+/*============ FEBRUARY EDITION CSS END ==========*/
+/*============ FAQs PAGE START ==========*/
+.faq_sec {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+    float: left;
+}
+.faq_sec .top_head {
+    margin-bottom: 70px;
+}
+.faq_sec h1 {
+    color: #000000;
+    font-size: 28px;
+    line-height: 40px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Montserrat-Bold';
+    text-transform: capitalize;
+}
+.faq_sec .main_formDiv {
+    width: 43%;
+    float: left;
+    border: 1px solid #dddddd;
+    padding: 50px 20px;
+}
+.faq_sec .top_head p {
+    text-align: left;
+    color: #000000;
+    line-height: 21.33px;
+    font-family: 'Montserrat-Light';
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.questions_side {
+    width: 53%;
+    float: right;
+}
+.wrapper.quesTab_box {
+    width: 100%;
+    float: left;
+}
+.quesTab_box .panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #eaeaea;
+    margin-top: 5px;
+    padding: 10px 0;
+    box-shadow: none;
+}
+.ques_tabs .panel-heading {
+    padding: 0;
+    border: 0;
+    background-color: #ffffff;
+}
+.quesTab_box .ques_tabs .panel-title > a, .ques_tabs .panel-title > a:active {
+    display: block;
+    padding: 0;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: 0;
+    word-spacing: 0;
+    text-decoration: none;
+    line-height: 27px;
+    font-family: 'Montserrat-Light';
+    font-size: 15px;
+    padding-left: 44px;
+    color: #000000;
+    margin-bottom: 10px;
+    position: relative;
+}
+.quesTab_box .ques_tabs .panel-heading.active a {
+    color: #dd0f0f;
+}
+.quesTab_box .ques_tabs .panel-heading a:before {
+    font-family: 'Glyphicons Halflings';
+    content: "\e114";
+    float: right;
+    transition: all 0.5s;
+}
+.quesTab_box .ques_tabs .panel-title > a span.star_icon {
+    vertical-align: sub;
+    margin-right: 15px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.quesTab_box .ques_tabs .panel-body {
+    padding: 15px 0;
+    padding-left: 44px;
+    color: #000000;
+    line-height: 21.33px;
+    font-family: 'Montserrat-Light';
+    font-size: 14px;
+    border-top: 1px solid #eaeaea;
+}
+.ques_tabs .panel-body a, .ques_tabs .panel-body a:hover, .ques_tabs .panel-body a:focus {
+    color: #db271f;
+    text-decoration: underline;
+}
+.quesTab_box .ques_tabs .panel-heading.active a {
+    color: #dd0f0f;
+}
+/*============ FAQs PAGE END ==========*/
