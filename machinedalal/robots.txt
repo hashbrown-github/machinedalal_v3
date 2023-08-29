@@ -1,0 +1,7 @@
+﻿User-agent: *
+Disallow: /admin/
+Disallow: /bin/
+Disallow: /cgi-bin/
+Disallow: /apppages/terms-conditions.html
+Disallow: /apppages/privacy-policy.html
+Sitemap: https://machinedalal.com/sitemap.xml
