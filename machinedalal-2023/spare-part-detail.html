@@ -229,6 +229,7 @@
           <div class="sparePart_sec2_content">
             <div class="fast_join" itemscope itemtype="https://schema.org/Product">            
               <div class="slider-sec">
+                <!--
                 <div id="product-slider" class="usedMac_dtlSlider has-social-share">
                   <div class="col">
                     <div id="product-slider__main" class="object-fit--contain">
@@ -243,15 +244,36 @@
                       </div>
                     </div>
                   </div>
-                  <!-- <div class="col">
+                  <!- <div class="col">
                     <div id="product-slider__nav" class="object-fit--contain">
                       <img itemprop="image" class="lazyload" src="images/machine-slider-img.jpg" alt="Machine" />
                       <img itemprop="image" class="lazyload" src="images/blog-img-1.jpg" alt="Machine" />
                       <img itemprop="image" class="lazyload" src="images/blog-img-2.jpg" alt="Machine" />
                     </div>
-                  </div> -->
-                </div>
+                  </div> ->
+                </div> -->
+                <div class="spareSliderMain">
+                  <div class="owl-carousel owl-theme" id="spareSlider">
+                    <div class="item">
+                      <div class="spareSliderDetail">
+                          <img width="100%" height="358" src="images/machine-slider-img.jpg" class="img-fluid" alt="Machine" /> 
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="spareSliderDetail">
+                          <img width="100%" height="358" src="images/blog-img-1.jpg" class="img-fluid" alt="Machine" /> 
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="spareSliderDetail">
+                          <img width="100%" height="358" src="images/blog-img-1.jpg" class="img-fluid" alt="Machine" /> 
+                      </div>
+                    </div>
+                  </div>
               </div>
+              </div>
+
+
               <div class="innerText_content">
                 <h3 itemprop="name">3. station</h3>
                 <h4 itemprop="category">Folding Machine</h4>
@@ -509,6 +531,31 @@
     zoom: false
   })
   </script> -->
+
+<script src="js/owl.carousel.min.js"></script>
+<!-- START spareSlider -->
+<script>
+  $(document).ready(function() {
+    var owl = $('.owl-carousel');
+        $('#spareSlider').owlCarousel({
+          loop: true,
+          margin: 10,
+          items: 1,
+          fade: true,
+          responsiveClass: true,
+          autoplay: true,
+          autoplayTimeout: 2000,
+          animateOut: 'fadeOut',
+        })
+    $('.play').on('click', function() {
+      owl.trigger('play.owl.autoplay', [1000])
+    })
+    $('.stop').on('click', function() {
+      owl.trigger('stop.owl.autoplay')
+    })
+  })
+</script>
+<!-- END spareSlider -->
 </body>
 
 </html>
