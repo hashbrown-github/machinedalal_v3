@@ -60,8 +60,16 @@
               <span><a href="/SignUp" class="menu_list-border">Sign up</a></span>
             </div>
             <div class="machine_dropdown">
-              <div class="console_btn">
-                <a href="#"><img src="images/console.svg" alt="Console Icon" />Console</a>
+              <div class="dropdown">
+                <a id="btn_masterProfile" onclick="myFunction()" class="dropbtn"><span id="lbl_mp_name" class="dropbtn_click" title="vaibhav dhiman">vaibhav dhiman</span> <span class="material-symbols-outlined dropbtn_click drop_icon">keyboard_arrow_down</span> </a>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="/MyAccount">My Account</a>
+                  <a id="btn_changePwd" data-popup-target="#ChangePwd-popup">Change Password
+                    <span id="lbl_countTotalMsg2" style="color: red; font-weight: bold"></span>
+                  </a>
+                  <a href="/Messages">Conversation</a>
+                  <a id="btn_masterLogout">Logout</a>
+                </div>
               </div>
             </div>
           </div>
@@ -71,7 +79,7 @@
               <div class="user_profileM" id="UserProfileInfo">
                 <div>
                   <img src="https://Hashbrown.azureedge.net/machinedalalimages/MemberProfile/132978495498466268.png" alt="User Profile" />
-                  <span id="userProfileName">Hello, vaibhav dhiman <span class="d_block">Go to Console</span></span>
+                  <span id="userProfileName">Hello, vaibhav dhiman</span>
                 </div>
                 <div id="userLoginSignUp" style="display: none;">
                   <a itemprop="url" class="HeaderLoginButton" href="javascript:void(0);">Login</a>
@@ -163,208 +171,332 @@
       </div>
     </div>
   </section>
+<!-- <section class="searchBanner_box">
+  <div class="table-cell">
+    <div class="container">
+      <div class="searchBanner_inner">
+        <h3>Blog</h3>
+        <div class="bannerInnerData">
+          <div class="form-group mb-0">
+            <div class="input-group">
+              <input class="form-control" type="text" placeholder="Search here..." />
+              <span class="input-group-btn">
+                <button class="btn" type="button"><i class="material-symbols-outlined">search</i></button>
+              </span>
+              <div class="dropdown_menu">
+                <div class="search_suggestions">
+                  <ul>
+                    <li>
+                      <a href="/blog/used-machines/used-polar-sheet-cutting-machine-for-sale">                 
+                        <p>Used Polar Sheet Cutting Machine for Sale </p>                 
+                        <h4>Used Machines</h4>            
+                      </a>         
+                    </li>        
+                    <li>
+                      <a href="/blog/used-machines/used-polar-sheet-cutting-machine-for-sale">                 
+                        <p>Used Polar Sheet Cutting Machine for Sale </p>                 
+                        <h4>Used Machines</h4>            
+                      </a>         
+                    </li>        
+                    <li>
+                      <a href="/blog/used-machines/used-polar-sheet-cutting-machine-for-sale">                 
+                        <p>Used Polar Sheet Cutting Machine for Sale </p>                 
+                        <h4>Used Machines</h4>            
+                      </a>         
+                    </li>  
+                  </ul>      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+</section> -->
 <div class="breadcrumbs_sec">
   <div class="container">
     <div class="leftLinks1">
       <a href="index.html">Home</a>
       <span class="arrowRight">&gt;</span>
-      <a href="blogs.html">Machine Dalal Blog</a>
-      <span class="arrowRight">&gt;</span>
-      <span class="mac_brand">All</span>
+      <span class="mac_brand">Blog</span>
     </div>
   </div>
 </div>
 <!-- START blogMain -->
 <section class="blogMain">
 	<div class="container"> 
+    <!-- <div class="headingCustom0">
+      <h1>Machine Dalal Blogs</h1>
+    </div> -->
 		<div class="row justify-content-center">
+      <!-- <div class="col-lg-9 col-md-9 col-sm-12 paddingRight"></div> -->
       <div class="col-lg-9 col-md-9 col-sm-12">
-        <!-- <div class="categoryName">
-          <h3>Machines & Equipment</h3>
-        </div> -->
-        <div class="categoryList">
-          <ul>
-            <li>
-              <div class="categoryList1">
-                <a href="blog-detail.html">
-                  <figure>
-                    <img src="images/big-machine.jpg" class="img-responsive">
-                  </figure>
-                  <div class="categoryCont">
-                    <h5>Used Machine</h5>
-                    <h3>Used Foliant-Pollux Laminator & Coater Available for Sale</h3>
-                    <h4>Find Folliant-Pollux 760 SF laminator & coater with immediate availability on Machine Dalal.</h4>
-                    <h5>Vikram Thakur</h5>
-                    <div class="readMore_btn">Read More</div>
-                  </div>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div class="categoryList1">
-                <a href="blog-detail.html">
-                  <figure>
-                    <img src="images/become_dealer.jpg" class="img-responsive">
-                  </figure>
-                  <div class="categoryCont">
-                    <h5>New Machine</h5>
-                    <h3>Used 2-Color Miller-TP Offset Printing Machine for Sale </h3>
-                    <h4>Find 2-color Miller-TP-104 offset with max. sheet size of 72 x 104cm on Machine Dalal.</h4>
-                    <div class="readMore_btn">Read More</div>
-                  </div>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div class="categoryList1">
-                <a href="blog-detail.html">
-                  <figure>
-                    <img src="images/article-6.jpg" class="img-responsive">
-                  </figure>
-                  <div class="categoryCont">
-                    <h5>New Machine</h5>
-                    <h3>Used 2-Color Miller-TP Offset Printing Machine for Sale </h3>
-                    <h4>Find 2-color Miller-TP-104 offset with max. sheet size of 72 x 104cm on Machine Dalal.</h4>
-                    <h5>Vikram Thakur</h5>
-                    <div class="readMore_btn">Read More</div>
-                  </div>
-                </a>
-              </div>
-            </li>
-          </ul>
-          <div class="List_pagination mt-0">
-            <ul>
-              <li class="previous_page"><a href="#"><span><i class="material-symbols-outlined">west</i>Prev</span></a></li>
-              <li class="active"><a href="#"><span>1</span></a></li>
-              <li><a href="#"><span>2</span></a></li>
-              <li><a href="#"><span>3</span></a></li>
-              <li><a href="#"><span>4</span></a></li>
-              <li class="next_page"><a href="#"><span>Next<i class="material-symbols-outlined">east</i></span></a></li>
-            </ul>
+        <div class="BlogLeft">
+          <div class="headingCustom2">
+            <h2>Featured Articles</h2>
+            <a href="featured-list.html">View More</a>
           </div>
-        </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="blogInner">
+                <a href="#"> 
+                  <figure>
+                    <img src="https://media.wired.com/photos/632b748b74ce5b82a68ef31b/16:9/w_640,c_limit/Spain_Wildfire_Science_GettyImages-1409603369.jpg" class="img-responsive">
+                  </figure>
+                  <div class="adminData">
+                    <h5>Omnipotence</h5>
+                    <h4>The Ungodly Surveillance of Anti-Porn ‘Shameware’ Apps</h4>
+                    <h6>Dhruv Mehrotra</h6>
+                  </div>
+                </a>
+              </div>
+              <div class="blogInner">
+                <a href="#">
+                  <figure>
+                    <img src="https://media.wired.com/photos/632a4347995b6da54b57efd7/16:9/w_640,c_limit/Shadowy-Russian-Cell-Companies-Security-GettyImages-713877183.jpg" class="img-responsive">
+                  </figure>
+                  <div class="adminData">
+                    <h5>Omnipotence</h5>
+                    <h4>The Ungodly Surveillance of Anti-Porn ‘Shameware’ Apps</h4>
+                    <h6>Dhruv Mehrotra</h6>
+                  </div>
+                </a>
+              </div>  
+            </div> 
+            <div class="col-lg-8 col-md-12 col-sm-12">
+              <div class="blogInner blogInnerRight">
+                <a href="#">
+                  <figure>
+                    <img src="https://media.wired.com/photos/632a20908990652479ff393a/16:9/w_640,c_limit/lede_Corruption-of-a-Dark-mage.jpg" class="img-responsive">
+                  </figure>
+                  <div class="adminData">
+                    <h5>Urgent Care</h5>
+                    <h4>This Uncensored AI Art Tool Can Generate Fantasies—and Nightmares</h4>
+                    <p>As a young Black woman, I saw my pregnancy treated like a problem. So I ditched the doctors for home delivery and found an alternative model for health care.</p>
+                    <h6>Ruha Benjamin</h6>
+                  </div>
+                </a>
+              </div>
+            </div>  
+          </div>  
+        </div> 
       </div>  
-      <div class="col-lg-3 col-md-3 col-sm-12" style="display: none;">
-        <div class="sidebar">
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="sidebar" style="display: none;">
           <div class="categories">
             <h3>Related Categories</h3>
             <div class="categoriesListing">
               <div class="contentScroll">
                 <ul>
-                  <li><a href="#">From the Magazine</a></li>
-                  <li><a href="#">Release Notes</a></li>
-                  <li><a href="#">Founder's Desk</a></li>
-                  <li><a href="#">Resources</a></li>
-                  <li><a href="#">Machines & Equipment</a></li>
-                  <li><a href="#">Archive</a></li>
+                  <li><a href="blog-category-list.html">From the Magazine</a></li>
+                  <li><a href="blog-category-list.html">Release Notes</a></li>
+                  <li><a href="blog-category-list.html">Founder's Desk</a></li>
+                  <li><a href="blog-category-list.html">Resources</a></li>
+                  <li><a href="blog-category-list.html">Machines & Equipment</a></li>
+                  <li><a href="blog-category-list.html">Archive</a></li>
                 </ul>
               </div>  
-            </div>
+            </div>  
+            <!-- <div class="ads">
+              <figure>
+                <img class="img-responsive" src="images/blog-machines-video.gif" alt="Ads"/>
+              </figure>
+            </div> -->
           </div> 
         </div>    
       </div>  
     </div>
   </div>
-</section> 
-<section class="blog_cards">
-  <div class="container">
-    <h4>Machine Dalal Services</h4>
-    <ul class="blog_cards1">
-      <li>
-        <a href="#">
-          <span></span>
-          <h4>Sell Your Equipment</h4>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <span></span>
-          <h4>Post Your Requirements</h4>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <span></span>
-          <h4>How to Sell Spare Parts?</h4>
-        </a>
-      </li>
-    </ul>
-  </div>
-</section>
-<section class="blogCategory_sec">
-  <div class="container">
-    <h3>Explore Blog Categories</h3>
-    <ul class="blogCategory_box">
-      <li>
-        <div class="side_1">
-          <img src="images/notes-category.jpg" alt="Release Notes" />
-        </div>
-        <div class="side_2">
-          <!-- <h6>Release Notes</h6> -->
-          <h3>Release Notes</h3>
-          <p>Latest information about the changes, updates, and improvements made to the software and application.</p>
-          <a href="blog-category-list.html" class="readMore_btn mt-0">Read Blog</a>
-        </div>
-      </li>
-      <li>
-        <div class="side_2">
-          <!-- <h6>From the Magazine</h6> -->
-          <h3>Machine Dalal Magazine</h3>
-          <p>Delve deeper into the world of graphic design, the history and evolution of print processes and packaging.</p>
-          <a href="blog-category-list.html" class="readMore_btn mt-0">Read Blog</a>
-        </div>
-        <div class="side_1">
-          <img src="images/magazine-category.jpg" alt="Magazine" />
-        </div>
-      </li>
-      <li>
-        <div class="side_1">
-          <img src="images/founder-category.jpg" alt="Founder's Desk" />
-        </div>
-        <div class="side_2">
-          <!-- <h6>Founder's Desk</h6> -->
-          <h3>Founder's Desk</h3>
-          <p>Offers a deeper understanding of the principles, goals, and values that guide the platform.</p>
-          <a href="blog-category-list.html" class="readMore_btn mt-0">Read Blog</a>
-        </div>
-      </li>
-      <li>
-        <div class="side_2">
-          <!-- <h6>Machines & Equipment</h6> -->
-          <h3>Machine & Equipment</h3>
-          <p>Features in-depth information about listed print machinery including specifications, location and features for informed decision-making.</p>
-          <a href="blog-category-list.html" class="readMore_btn mt-0">Read Blog</a>
-        </div>
-        <div class="side_1">
-          <img src="images/machines-category.jpg" alt="Equipments" />
-        </div>
-      </li>
-      <li>
-        <div class="side_1">
-          <img src="images/archive-category.jpg" alt="Archive" />
-        </div>
-        <div class="side_2">
-          <!-- <h6>Archive</h6> -->
-          <h3>Archive</h3>
-          <p>Access and review previous articles, listings, updates, or historical information.</p>
-          <a href="blog-category-list.html" class="readMore_btn mt-0">Read Blog</a>
-        </div>
-      </li>
-      <li>
-        <div class="side_2">
-          <!-- <h6>Archive</h6> -->
-          <h3>Resources</h3>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
-          <a href="blog-category-list.html" class="readMore_btn mt-0">Read Blog</a>
-        </div>
-        <div class="side_1">
-          <img src="images/resources-category.jpg" alt="Resources" />
-        </div>
-      </li>
-    </ul>
-  </div>
 </section>
 <!-- END blogMain -->
+<!-- START BlogAll -->
+<section class="blogAll">
+  <div class="container"> 
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="headingCustom">
+          <h2>Tranding Stories</h2>
+        </div>
+      </div>  
+    </div>
+    <div id="blogAll"> 
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="blogInner blogInnerAll">
+            <a href="#">
+              <figure>
+                <img src="https://media.wired.com/photos/632a20908990652479ff393a/16:9/w_640,c_limit/lede_Corruption-of-a-Dark-mage.jpg" class="img-responsive">
+              </figure>
+              <div class="adminData">
+                <h5>Omnipotence</h5>
+                <h4>The Ungodly Surveillance of Anti-Porn ‘Shameware’ Apps</h4>
+                <p>As a young Black woman, I saw my pregnancy treated like a problem. So I ditched the doctors for home delivery and found an alternative model for health care.</p>
+                <h6>Dhruv Mehrotra</h6>
+              </div>
+            </a>
+          </div>
+        </div>  
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="blogInner blogInnerAll">
+            <a href="#">
+              <figure>
+                <img src="https://media.wired.com/photos/632a20908990652479ff393a/16:9/w_640,c_limit/lede_Corruption-of-a-Dark-mage.jpg" class="img-responsive">
+              </figure>
+              <div class="adminData">
+                <h5>Omnipotence</h5>
+                <h4>The Ungodly Surveillance of Anti-Porn ‘Shameware’ Apps</h4>
+                <p>As a young Black woman, I saw my pregnancy treated like a problem. So I ditched the doctors for home delivery and found an alternative model for health care.</p>
+                <h6>Dhruv Mehrotra</h6>
+              </div>
+            </a>
+          </div>
+        </div> 
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="blogInner blogInnerAll">
+            <a href="#">
+              <figure>
+                <img src="https://media.wired.com/photos/632a20908990652479ff393a/16:9/w_640,c_limit/lede_Corruption-of-a-Dark-mage.jpg" class="img-responsive">
+              </figure>
+              <div class="adminData">
+                <h5>Omnipotence</h5>
+                <h4>The Ungodly Surveillance of Anti-Porn ‘Shameware’ Apps</h4>
+                <p>As a young Black woman, I saw my pregnancy treated like a problem. So I ditched the doctors for home delivery and found an alternative model for health care.</p>
+                <h6>Dhruv Mehrotra</h6>
+              </div>
+            </a>
+          </div>
+        </div> 
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="blogInner blogInnerAll">
+            <a href="#">
+              <figure>
+                <img src="https://media.wired.com/photos/632a20908990652479ff393a/16:9/w_640,c_limit/lede_Corruption-of-a-Dark-mage.jpg" class="img-responsive">
+              </figure>
+              <div class="adminData">
+                <h5>Omnipotence</h5>
+                <h4>The Ungodly Surveillance of Anti-Porn ‘Shameware’ Apps</h4>
+                <p>As a young Black woman, I saw my pregnancy treated like a problem. So I ditched the doctors for home delivery and found an alternative model for health care.</p>
+                <h6>Dhruv Mehrotra</h6>
+              </div>
+            </a>
+          </div>
+        </div>  
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="blogInner blogInnerAll">
+            <a href="#">
+              <figure>
+                <img src="https://media.wired.com/photos/632a20908990652479ff393a/16:9/w_640,c_limit/lede_Corruption-of-a-Dark-mage.jpg" class="img-responsive">
+              </figure>
+              <div class="adminData">
+                <h5>Omnipotence</h5>
+                <h4>The Ungodly Surveillance of Anti-Porn ‘Shameware’ Apps</h4>
+                <p>As a young Black woman, I saw my pregnancy treated like a problem. So I ditched the doctors for home delivery and found an alternative model for health care.</p>
+                <h6>Dhruv Mehrotra</h6>
+              </div>
+            </a>
+          </div>
+        </div> 
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="blogInner blogInnerAll">
+            <a href="#">
+              <figure>
+                <img src="https://media.wired.com/photos/632a20908990652479ff393a/16:9/w_640,c_limit/lede_Corruption-of-a-Dark-mage.jpg" class="img-responsive">
+              </figure>
+              <div class="adminData">
+                <h5>Omnipotence</h5>
+                <h4>The Ungodly Surveillance of Anti-Porn ‘Shameware’ Apps</h4>
+                <p>As a young Black woman, I saw my pregnancy treated like a problem. So I ditched the doctors for home delivery and found an alternative model for health care.</p>
+                <h6>Dhruv Mehrotra</h6>
+              </div>
+            </a>
+          </div>
+        </div> 
+      </div>  
+      <div class="LoadMoreBtn">
+        <a class="btn btnTheme" href="javascript:void(0);">Load More..</a>
+      </div>
+    </div> 
+  </div>
+</section>
+<!-- END BlogAll -->
+<!-- START div_RecommendedMachines -->
+<section class="card_border row_padding">
+  <div class="space-box">
+    <div class="container-fluid">
+      <h3 class="main_heading">Recently used Machines</h3>
+      <div class="black-line"></div>
+      <div id="div_randomUsedMachine">
+        <a href="#" class="recommend_card new_Card hoverable"> 
+          <img src="https://Hashbrown.azureedge.net/machinedalalimages/Machine/Folding-Machine-Heidelberg-Stahlfolder-KH-82-4-KZ-PFH-image-133389846802751705.jpg" alt="Heidelberg Stahlfolder">
+          <div class="recommend_content">
+            <h3 class="modal_boxRecommend">Stahlfolder KH 82/4 KZ - PFH</h3>
+            <h4 class="sizeRed">50.8 X 73.66 cm / 20 X 29 inch</h4>
+            <p>width 82 cm age 2014
+              fully automated (pockets, rollers, knifes) pallet feeder PFH 82 4 folding pockets in the parallel fold section
+              upstream knife shaft following knife shaft 2 folding knives in the cross fold section
+              delivery possible to the left or right noise absorbing hood Twinstacker TSH 70 with lateral exit without compressors / air supply
+              Ref: HE230267A Please ask for price. We ship and install worldwide!
+            </p>
+          </div>
+        </a>
+        <a href="#" class="recommend_card new_Card hoverable"> 
+          <img src="https://Hashbrown.azureedge.net/machinedalalimages/Machine/Folding-Machine-Heidelberg-Stahlfolder-KH-82-4-KZ-PFH-image-133389846802751705.jpg" alt="Heidelberg Stahlfolder">
+          <div class="recommend_content">
+            <h3 class="modal_boxRecommend">Stahlfolder KH 82/4 KZ - PFH</h3>
+            <h4 class="sizeRed"></h4>
+            <p>width 82 cm age 2014
+              fully automated (pockets, rollers, knifes) pallet feeder PFH 82 4 folding pockets in the parallel fold section
+              upstream knife shaft following knife shaft 2 folding knives in the cross fold section
+              delivery possible to the left or right noise absorbing hood Twinstacker TSH 70 with lateral exit without compressors / air supply
+              Ref: HE230267A Please ask for price. We ship and install worldwide!
+            </p>
+          </div>
+        </a>
+        <a href="#" class="recommend_card new_Card hoverable"> 
+          <img src="https://Hashbrown.azureedge.net/machinedalalimages/Machine/Folding-Machine-Heidelberg-Stahlfolder-KH-82-4-KZ-PFH-image-133389846802751705.jpg" alt="Heidelberg Stahlfolder">
+          <div class="recommend_content">
+            <h3 class="modal_boxRecommend">Stahlfolder KH 82/4 KZ - PFH</h3>
+            <h4 class="sizeRed">50.8 X 73.66 cm / 20 X 29 inch</h4>
+            <p>width 82 cm age 2014
+              fully automated (pockets, rollers, knifes) pallet feeder PFH 82 4 folding pockets in the parallel fold section
+              upstream knife shaft following knife shaft 2 folding knives in the cross fold section
+              delivery possible to the left or right noise absorbing hood Twinstacker TSH 70 with lateral exit without compressors / air supply
+              Ref: HE230267A Please ask for price. We ship and install worldwide!
+            </p>
+          </div>
+        </a>
+        <a href="#" class="recommend_card new_Card hoverable"> 
+          <img src="https://Hashbrown.azureedge.net/machinedalalimages/Machine/Folding-Machine-Heidelberg-Stahlfolder-KH-82-4-KZ-PFH-image-133389846802751705.jpg" alt="Heidelberg Stahlfolder">
+          <div class="recommend_content">
+            <h3 class="modal_boxRecommend">Stahlfolder KH 82/4 KZ - PFH</h3>
+            <h4 class="sizeRed"></h4>
+            <p>width 82 cm age 2014
+              fully automated (pockets, rollers, knifes) pallet feeder PFH 82 4 folding pockets in the parallel fold section
+              upstream knife shaft following knife shaft 2 folding knives in the cross fold section
+              delivery possible to the left or right noise absorbing hood Twinstacker TSH 70 with lateral exit without compressors / air supply
+              Ref: HE230267A Please ask for price. We ship and install worldwide!
+            </p>
+          </div>
+        </a>
+        <a href="#" class="recommend_card new_Card hoverable"> 
+          <img src="https://Hashbrown.azureedge.net/machinedalalimages/Machine/Folding-Machine-Heidelberg-Stahlfolder-KH-82-4-KZ-PFH-image-133389846802751705.jpg" alt="Heidelberg Stahlfolder">
+          <div class="recommend_content">
+            <h3 class="modal_boxRecommend">Stahlfolder KH 82/4 KZ - PFH</h3>
+            <h4 class="sizeRed">50.8 X 73.66 cm / 20 X 29 inch</h4>
+            <p>width 82 cm age 2014
+              fully automated (pockets, rollers, knifes) pallet feeder PFH 82 4 folding pockets in the parallel fold section
+              upstream knife shaft following knife shaft 2 folding knives in the cross fold section
+              delivery possible to the left or right noise absorbing hood Twinstacker TSH 70 with lateral exit without compressors / air supply
+              Ref: HE230267A Please ask for price. We ship and install worldwide!
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END div_RecommendedMachines -->
 <section class="newBrands_sec4">
   <div class="newBrands_sec41">
     <div class="container">
