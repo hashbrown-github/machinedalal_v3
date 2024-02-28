@@ -204,14 +204,6 @@
   </div>
   <section class="equipment_sec1">
     <div class="home_container">
-      <div class="brand_heading">
-        <div class="imageSide">
-          <div class="logoImg">
-            <img src="images/heidel-logo.svg" alt="Heidelberg Logo" />
-          </div>
-          <!-- <h3>Heidelberg</h3> -->
-        </div>
-      </div>
       <div class="add_filter_btn">
         <a href="#" class="show_sideBar"><span class="material-symbols-outlined"> tune </span>Filters</a>
       </div>
@@ -225,10 +217,11 @@
                     <div class="panel panel-default">
                       <div class="panel-heading filter_machines">
                         <h4 class="panel-title">
-                          <a class="collapsed" href="#">
+                          <div class="collapsed">
                             <h3>Filter</h3>
+                            <button type="button" class="collapseBtn" id="collapseBtn"></button>
                             <span class="material-symbols-outlined close_btn">close</span>
-                          </a>
+                          </div>
                         </h4>
                       </div>
                       <div class="panel-collapse">
@@ -249,11 +242,14 @@
                       <div class="panel-group categoryCollapse" id="accordion0" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                           <div class="panel-heading" role="tab" id="categoryList">
-                            <h4 class="panel-title">
-                              <a class="" role="button" data-toggle="collapse" data-toggle="tooltip" data-placement="top" title="Click to hide options" data-parent="#accordion0" href="#collapseCate_list" aria-expanded="true" aria-controls="collapseCate_list">
-                                <h3>Category</h3>
+                            <div class="panel-title">
+                              <h3>Categories</h3>
+                              <a class="add_tooltip" role="button" data-toggle="collapse" data-parent="#accordion0" href="#collapseCate_list" aria-expanded="true" aria-controls="collapseCate_list">
+                                <div class="tooltip_box">
+                                  <span>Expand to show / Collapse to hide options</span>
+                                </div>
                               </a>
-                            </h4>
+                            </div>
                           </div>
                           <div id="collapseCate_list" class="panel-collapse in" role="tabpanel" aria-labelledby="categoryList" aria-expanded="true">
                             <div class="panel-body">
@@ -263,10 +259,63 @@
                               </div>
                               <ul class="main_category">
                                 <li>
-                                  <h4><a href="javascript:void(0);">Sheet Fed / Offset</a></h4>
+                                  <h4>
+                                    <a href="javascript:void(0);">Sheet Fed / Offset(10)</a>
+                                    <a href="javascript:void(0);" class="add_tooltip show_list collapse_box open">
+                                      <div class="tooltip_box">
+                                        <span>Collapse / Expand</span>
+                                      </div>
+                                    </a>
+                                  </h4>
+                                  <ul class="sub_category">
+                                    <li>
+                                      <h5><a href="javascript:void(0);" class="">Mini Offset(5)</a></h5>
+                                    </li>
+                                    <li>
+                                      <h5><a href="javascript:void(0);" class="">Mini Offset(5)</a></h5>
+                                    </li>
+                                  </ul>
                                 </li>
                                 <li>
-                                  <h4><a href="javascript:void(0);">Post Press</a></h4>
+                                  <h4>
+                                    <a href="#">Post Press</a>
+                                    <a href="javascript:void(0);" class="add_tooltip show_list collapse_box open">
+                                      <div class="tooltip_box">
+                                        <span>Collapse / Expand</span>
+                                      </div>
+                                    </a>
+                                  </h4>
+                                  <ul class="sub_category">
+                                    <li>
+                                      <h5><a href="javascript:void(0);" class="">Accessories</a></h5>
+                                      <ul class="subsub_category">
+                                        <li><h6><a href="javascript:void(0);">Book Production - Small Volume</a></h6></li>
+                                        <li><h6><a href="javascript:void(0);">Gluing Machine</a></h6></li>
+                                        <li><h6><a class="active" href="javascript:void(0);">Manual Board Cutters</a></h6></li>
+                                        <li><h6><a href="javascript:void(0);">Scoring and Perforating Machines</a></h6></li>
+                                      </ul>
+                                    </li>
+                                    <li>
+                                      <h5><a href="javascript:void(0);" class="">Book Block Production / Sewing</a></h5>
+                                      <ul class="subsub_category">
+                                        <li><h6><a href="javascript:void(0);">Book Block Press and Nipping Machine</a></h6></li>
+                                        <li><h6><a href="javascript:void(0);">Bookback Rounding Machines</a></h6></li>
+                                        <li><h6><a href="javascript:void(0);">End Sheet Gluing Machines</a></h6></li>
+                                        <li><h6><a href="javascript:void(0);">Nipping Machines</a></h6></li>
+                                        <li><h6><a href="javascript:void(0);">Sewing Machines</a></h6></li>
+                                      </ul>
+                                    </li>
+                                    <li>
+                                      <h5><a href="javascript:void(0);" class="">Book Production</a></h5>
+                                      <ul class="subsub_category">
+                                        <li><h6><a href="javascript:void(0);">Book Production Lines</a></h6></li>
+                                        <li><h6><a href="javascript:void(0);">Book Stacker</a></h6></li>
+                                        <li><h6><a href="javascript:void(0);">Jacketing Machines</a></h6></li>
+                                        <li><h6><a href="javascript:void(0);">Joint Forming Machines</a></h6></li>
+                                        <li><h6><a href="javascript:void(0);">Split Saw</a></h6></li>
+                                      </ul>
+                                    </li>
+                                  </ul>
                                 </li>
                                 <li>
                                   <h4><a href="javascript:void(0);">Die Cutting</a></h4>
@@ -315,11 +364,10 @@
                       <div class="panel-group" id="accordion5" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                           <div class="panel-heading active" role="tab" id="brand_color">
-                            <h4 class="panel-title">
-                              <a class="" role="button" data-toggle="collapse" data-parent="#accordion5" href="#collapsebrand_color" aria-expanded="true" aria-controls="collapsebrand_color">
-                                <h3>Colors</h3>
-                              </a>
-                            </h4>
+                            <div class="panel-title">
+                              <h3>Colors</h3>
+                              <a class="" role="button" data-toggle="collapse" data-parent="#accordion5" href="#collapsebrand_color" aria-expanded="true" aria-controls="collapsebrand_color"></a>
+                            </div>
                           </div>
                           <div id="collapsebrand_color" class="panel-collapse in" role="tabpanel" aria-labelledby="brand_color" aria-expanded="true">
                             <div class="panel-body">
@@ -406,11 +454,10 @@
                       <div class="panel-group" id="accordion6" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                           <div class="panel-heading active" role="tab" id="sheet_size">
-                            <h4 class="panel-title">
-                              <a class="" role="button" data-toggle="collapse" data-parent="#accordion6" href="#collapseSheet_size" aria-expanded="true" aria-controls="collapseSheet_size">
-                                <h3>Sheet Size</h3>
-                              </a>
-                            </h4>
+                            <div class="panel-title">
+                              <h3>Sheet Size</h3>
+                              <a class="" role="button" data-toggle="collapse" data-parent="#accordion6" href="#collapseSheet_size" aria-expanded="true" aria-controls="collapseSheet_size"></a>
+                            </div>
                           </div>
                           <div id="collapseSheet_size" class="panel-collapse in" role="tabpanel" aria-labelledby="Sheet_size" aria-expanded="true">
                             <div class="panel-body">
@@ -473,11 +520,10 @@
                       <div class="panel-group" id="accordion7" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                           <div class="panel-heading" role="tab" id="loc_list">
-                            <h4 class="panel-title">
-                              <a class="" role="button" data-toggle="collapse" data-parent="#accordion7" href="#collapseLoc_list" aria-expanded="true" aria-controls="collapseLoc_list">
-                                <h3>Location</h3>
-                              </a>
-                            </h4>
+                            <div class="panel-title">
+                              <h3>Loaction</h3>
+                              <a class="" role="button" data-toggle="collapse" data-parent="#accordion7" href="#collapseLoc_list" aria-expanded="true" aria-controls="collapseLoc_list"></a>
+                            </div>
                           </div>
                           <div id="collapseLoc_list" class="panel-collapse in" role="tabpanel" aria-labelledby="loc_list" aria-expanded="true">
                             <div class="panel-body">
@@ -552,11 +598,10 @@
                       <div class="panel-group" id="accordion8" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                           <div class="panel-heading" role="tab" id="model_list">
-                            <h4 class="panel-title">
-                              <a class="" role="button" data-toggle="collapse" data-parent="#accordion8" href="#collapseModel_list" aria-expanded="true" aria-controls="collapseModel_list">
-                                <h3>Model</h3>
-                              </a>
-                            </h4>
+                            <div class="panel-title">
+                              <h3>Model</h3>
+                              <a class="" role="button" data-toggle="collapse" data-parent="#accordion8" href="#collapseModel_list" aria-expanded="true" aria-controls="collapseModel_list"></a>
+                            </div>
                           </div>
                           <div id="collapseModel_list" class="panel-collapse in" role="tabpanel" aria-labelledby="model_list" aria-expanded="true">
                             <div class="panel-body">
@@ -631,11 +676,10 @@
                       <div class="panel-group" id="accordion9" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                           <div class="panel-heading" role="tab" id="year_list">
-                            <h4 class="panel-title">
-                              <a class="" role="button" data-toggle="collapse" data-parent="#accordion9" href="#collapseYear_list" aria-expanded="true" aria-controls="collapseYear_list">
-                                <h3>Year</h3>
-                              </a>
-                            </h4>
+                            <div class="panel-title">
+                              <h3>Year</h3>
+                              <a class="" role="button" data-toggle="collapse" data-parent="#accordion9" href="#collapseYear_list" aria-expanded="true" aria-controls="collapseYear_list"></a>
+                            </div>
                           </div>
                           <div id="collapseYear_list" class="panel-collapse in" role="tabpanel" aria-labelledby="year_list" aria-expanded="true">
                             <div class="panel-body">
@@ -729,10 +773,18 @@
           </div>
         </div>
         <div class="machine_listing brandMac_listing">
-          <div class="searchSide">
-            <div class="searchCategory">
-              <i class="material-symbols-outlined">search</i>
-              <input type="text" placeholder="Search for Heidelberg Machine" />
+          <div class="brand_heading">
+            <div class="imageSide">
+              <div class="logoImg">
+                <img src="images/heidel-logo.svg" alt="Heidelberg Logo" />
+              </div>
+              <!-- <h3>Heidelberg</h3> -->
+            </div>
+            <div class="searchSide">
+              <div class="searchCategory">
+                <i class="material-symbols-outlined">search</i>
+                <input type="text" placeholder="Search for Heidelberg Machine" />
+              </div>
             </div>
           </div>
           <div class="machine_list12">
@@ -1206,6 +1258,48 @@
   </footer>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.js"></script>
+  <!-- ====== COLLAPSE ALL SCRIPT ====== -->
+  <script>
+    $(document).ready(function(){
+      $('#collapseBtn').click(function(){
+        if($(this).hasClass('collapseBtn')){
+          $('.categories_list .panel-title a:not(.collapsed').click();
+          $(this).removeClass('collapseBtn').addClass('expandBtn');
+        }
+        else {
+          $('.categories_list .panel-title a.collapsed').click();
+          $(this).removeClass('expandBtn').addClass('collapseBtn');
+        }
+      })
+    });
+  </script>
+  <!-- ====== COLLAPSE ALL SCRIPT END ====== -->
+  <!-- ====== COLLAPSE SINGLE SCRIPT ====== -->
+  <script>
+    $(document).ready(function(){
+      $('.show_list').click(function(){
+        if($(this).hasClass('open')){
+          $(this).removeClass('open');
+          $(this).parent().parent('li').find(' > ul').css({
+            'height': '0',
+            'margin-top': '0',
+            'opacity': '0',
+            'overflow': 'hidden'
+          });
+        }
+        else {
+          $(this).addClass('open');
+          $(this).parent().parent('li').find(' > ul').css({
+            'height': 'auto',
+            'margin-top': '8px',
+            'opacity': '1',
+            'overflow': 'visible'
+          });
+        }
+      });
+    });
+  </script>
+  <!-- ====== COLLAPSE SINGLE SCRIPT END ====== -->
   <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
   <script>
     var $min = $('.min'), $max = $('.max'), $min_input = $('#min'), $max_input = $('#max'), $slider = $('#slider').slider({

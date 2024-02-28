@@ -308,10 +308,11 @@
                     <div class="panel panel-default">
                       <div class="panel-heading filter_machines">
                         <h4 class="panel-title">
-                          <a class="collapsed" href="#">
+                          <div class="collapsed">
                             <h3>Filter</h3>
+                            <button type="button" class="collapseBtn" id="collapseBtn"></button>
                             <span class="material-symbols-outlined close_btn">close</span>
-                          </a>
+                          </div>
                         </h4>
                       </div>
                       <div class="panel-collapse">
@@ -332,11 +333,14 @@
                       <div class="panel-group categoryCollapse" id="accordion0" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                           <div class="panel-heading" role="tab" id="categoryList">
-                            <h4 class="panel-title">
-                              <a class="" role="button" data-toggle="collapse" data-toggle="tooltip" data-placement="top" title="Click to hide options" data-parent="#accordion0" href="#collapseCate_list" aria-expanded="true" aria-controls="collapseCate_list">
-                                <h3>Category</h3>
+                            <div class="panel-title">
+                              <h3>Categories</h3>
+                              <a class="add_tooltip" role="button" data-toggle="collapse" data-parent="#accordion0" href="#collapseCate_list" aria-expanded="true" aria-controls="collapseCate_list">
+                                <div class="tooltip_box">
+                                  <span>Expand to show / Collapse to hide options</span>
+                                </div>
                               </a>
-                            </h4>
+                            </div>
                           </div>
                           <div id="collapseCate_list" class="panel-collapse in" role="tabpanel" aria-labelledby="categoryList" aria-expanded="true">
                             <div class="panel-body">
@@ -346,10 +350,35 @@
                               </div>
                               <ul class="main_category">
                                 <li>
-                                  <h4><a href="javascript:void(0);"  class="show_list collapse_box open">Post Press</a></h4>
+                                  <h4>
+                                    <a href="javascript:void(0);">Sheet Fed / Offset(10)</a>
+                                    <a href="javascript:void(0);" class="add_tooltip show_list collapse_box open">
+                                      <div class="tooltip_box">
+                                        <span>Collapse / Expand</span>
+                                      </div>
+                                    </a>
+                                  </h4>
                                   <ul class="sub_category">
                                     <li>
-                                      <h5><a href="javascript:void(0);" class="show_list open">Accessories</a></h5>
+                                      <h5><a href="javascript:void(0);" class="">Mini Offset(5)</a></h5>
+                                    </li>
+                                    <li>
+                                      <h5><a href="javascript:void(0);" class="">Mini Offset(5)</a></h5>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <h4>
+                                    <a href="#">Post Press</a>
+                                    <a href="javascript:void(0);" class="add_tooltip show_list collapse_box open">
+                                      <div class="tooltip_box">
+                                        <span>Collapse / Expand</span>
+                                      </div>
+                                    </a>
+                                  </h4>
+                                  <ul class="sub_category">
+                                    <li>
+                                      <h5><a href="javascript:void(0);" class="">Accessories</a></h5>
                                       <ul class="subsub_category">
                                         <li><h6><a href="javascript:void(0);">Book Production - Small Volume</a></h6></li>
                                         <li><h6><a href="javascript:void(0);">Gluing Machine</a></h6></li>
@@ -358,7 +387,7 @@
                                       </ul>
                                     </li>
                                     <li>
-                                      <h5><a href="javascript:void(0);" class="show_list open">Book Block Production / Sewing</a></h5>
+                                      <h5><a href="javascript:void(0);" class="">Book Block Production / Sewing</a></h5>
                                       <ul class="subsub_category">
                                         <li><h6><a href="javascript:void(0);">Book Block Press and Nipping Machine</a></h6></li>
                                         <li><h6><a href="javascript:void(0);">Bookback Rounding Machines</a></h6></li>
@@ -368,7 +397,7 @@
                                       </ul>
                                     </li>
                                     <li>
-                                      <h5><a href="javascript:void(0);" class="show_list open">Book Production</a></h5>
+                                      <h5><a href="javascript:void(0);" class="">Book Production</a></h5>
                                       <ul class="subsub_category">
                                         <li><h6><a href="javascript:void(0);">Book Production Lines</a></h6></li>
                                         <li><h6><a href="javascript:void(0);">Book Stacker</a></h6></li>
@@ -380,10 +409,43 @@
                                   </ul>
                                 </li>
                                 <li>
-                                  <h4><a href="javascript:void(0);">Pre Press</a></h4>
+                                  <h4><a href="javascript:void(0);">Die Cutting</a></h4>
                                 </li>
                                 <li>
-                                  <h4><a href="javascript:void(0);">Sheetfed/ Offset</a></h4>
+                                  <h4><a href="javascript:void(0);">Folding Machine</a></h4>
+                                </li>
+                                <li>
+                                  <h4><a href="javascript:void(0);">Guillotines</a></h4>
+                                </li>
+                                <li>
+                                  <h4><a href="javascript:void(0);">Saddle Stitcher</a></h4>
+                                </li>
+                                <li>
+                                  <h4><a href="javascript:void(0);">Ctp Systems</a></h4>
+                                </li>
+                                <li>
+                                  <h4><a href="javascript:void(0);">Image Setters</a></h4>
+                                </li>
+                                <li>
+                                  <h4><a href="javascript:void(0);">Scanners</a></h4>
+                                </li>
+                                <li>
+                                  <h4><a href="javascript:void(0);">Plate Punchers/Bender</a></h4>
+                                </li>
+                                <li>
+                                  <h4><a href="javascript:void(0);">Die-Cutters- Automatic And Handfed</a></h4>
+                                </li>
+                                <li>
+                                  <h4><a href="javascript:void(0);">Gravure / Rotogravure</a></h4>
+                                </li>
+                                <li>
+                                  <h4><a href="javascript:void(0);">Letterpress</a></h4>
+                                </li>
+                                <li>
+                                  <h4><a href="javascript:void(0);">Plate Puncher</a></h4>
+                                </li>
+                                <li>
+                                  <h4><a href="javascript:void(0);">Hot Foil Stamping</a></h4>
                                 </li>
                               </ul>
                             </div>
@@ -393,11 +455,10 @@
                       <div class="panel-group" id="accordion4" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                           <div class="panel-heading active" role="tab" id="brand_list">
-                            <h4 class="panel-title">
-                              <a class="" role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapseBrand" aria-expanded="true" aria-controls="collapseBrand">
-                                <h3>Brands</h3>
-                              </a>
-                            </h4>
+                            <div class="panel-title">
+                              <h3>Brands</h3>
+                              <a class="" role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapseBrand" aria-expanded="true" aria-controls="collapseBrand"></a>
+                            </div>
                           </div>
                           <div id="collapseBrand" class="panel-collapse in" role="tabpanel" aria-labelledby="brand_list" aria-expanded="true">
                             <div class="panel-body padding-0">
@@ -466,11 +527,10 @@
                       <div class="panel-group" id="accordion5" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                           <div class="panel-heading active" role="tab" id="brand_color">
-                            <h4 class="panel-title">
-                              <a class="" role="button" data-toggle="collapse" data-parent="#accordion5" href="#collapsebrand_color" aria-expanded="true" aria-controls="collapsebrand_color">
-                                <h3>Colors</h3>
-                              </a>
-                            </h4>
+                            <div class="panel-title">
+                              <h3>Colors</h3>
+                              <a class="" role="button" data-toggle="collapse" data-parent="#accordion5" href="#collapsebrand_color" aria-expanded="true" aria-controls="collapsebrand_color"></a>
+                            </div>
                           </div>
                           <div id="collapsebrand_color" class="panel-collapse in" role="tabpanel" aria-labelledby="brand_color" aria-expanded="true">
                             <div class="panel-body">
@@ -557,11 +617,10 @@
                       <div class="panel-group" id="accordion6" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                           <div class="panel-heading active" role="tab" id="sheet_size">
-                            <h4 class="panel-title">
-                              <a class="" role="button" data-toggle="collapse" data-parent="#accordion6" href="#collapseSheet_size" aria-expanded="true" aria-controls="collapseSheet_size">
-                                <h3>Sheet Size</h3>
-                              </a>
-                            </h4>
+                            <div class="panel-title">
+                              <h3>Sheet Size</h3>
+                              <a class="" role="button" data-toggle="collapse" data-parent="#accordion6" href="#collapseSheet_size" aria-expanded="true" aria-controls="collapseSheet_size"></a>
+                            </div>
                           </div>
                           <div id="collapseSheet_size" class="panel-collapse in" role="tabpanel" aria-labelledby="Sheet_size" aria-expanded="true">
                             <div class="panel-body">
@@ -624,11 +683,10 @@
                       <div class="panel-group" id="accordion7" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                           <div class="panel-heading" role="tab" id="loc_list">
-                            <h4 class="panel-title">
-                              <a class="" role="button" data-toggle="collapse" data-parent="#accordion7" href="#collapseLoc_list" aria-expanded="true" aria-controls="collapseLoc_list">
-                                <h3>Location</h3>
-                              </a>
-                            </h4>
+                            <div class="panel-title">
+                              <h3>Loaction</h3>
+                              <a class="" role="button" data-toggle="collapse" data-parent="#accordion7" href="#collapseLoc_list" aria-expanded="true" aria-controls="collapseLoc_list"></a>
+                            </div>
                           </div>
                           <div id="collapseLoc_list" class="panel-collapse in" role="tabpanel" aria-labelledby="loc_list" aria-expanded="true">
                             <div class="panel-body">
@@ -703,11 +761,10 @@
                       <div class="panel-group" id="accordion8" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                           <div class="panel-heading" role="tab" id="model_list">
-                            <h4 class="panel-title">
-                              <a class="" role="button" data-toggle="collapse" data-parent="#accordion8" href="#collapseModel_list" aria-expanded="true" aria-controls="collapseModel_list">
-                                <h3>Model</h3>
-                              </a>
-                            </h4>
+                            <div class="panel-title">
+                              <h3>Model</h3>
+                              <a class="" role="button" data-toggle="collapse" data-parent="#accordion8" href="#collapseModel_list" aria-expanded="true" aria-controls="collapseModel_list"></a>
+                            </div>
                           </div>
                           <div id="collapseModel_list" class="panel-collapse in" role="tabpanel" aria-labelledby="model_list" aria-expanded="true">
                             <div class="panel-body">
@@ -716,61 +773,61 @@
                                   <li>
                                     <p>
                                       <input type="checkbox" id="model_list1">
-                                      <label for="model_list1">Baumann - BSW-P</label>
+                                      <label for="model_list1">SiasPrint - Progress 760 TS UV</label>
                                     </p>
                                   </li>
                                   <li>
                                     <p>
                                       <input type="checkbox" id="model_list2">
-                                      <label for="model_list2">CP Bourg - 361 S</label>
+                                      <label for="model_list2">SiasPrint - Progress 760 TS UV</label>
                                     </p>
                                   </li>
                                   <li>
                                     <p>
                                       <input type="checkbox" id="model_list3">
-                                      <label for="model_list3">Duplo - 600I</label>
+                                      <label for="model_list3">SiasPrint - Progress 760 TS UV</label>
                                     </p>
                                   </li>
                                   <li>
                                     <p>
                                       <input type="checkbox" id="model_list4">
-                                      <label for="model_list4">GUK - FA36 + SAF36</label>
+                                      <label for="model_list4">SiasPrint - Progress 760 TS UV</label>
                                     </p>
                                   </li>
                                   <li>
                                     <p>
                                       <input type="checkbox" id="model_list5">
-                                      <label for="model_list5">Heidelberg - GTP</label>
+                                      <label for="model_list5">SiasPrint - Progress 760 TS UV</label>
                                     </p>
                                   </li>
                                   <li>
                                     <p>
                                       <input type="checkbox" id="model_list6">
-                                      <label for="model_list6">Multipli - 35 PBA</label>
+                                      <label for="model_list6">SiasPrint - Progress 760 TS UV</label>
                                     </p>
                                   </li>
                                   <li>
                                     <p>
                                       <input type="checkbox" id="model_list7">
-                                      <label for="model_list7">Polar - 137 EMC-MON</label>
+                                      <label for="model_list7">SiasPrint - Progress 760 TS UV</label>
                                     </p>
                                   </li>
                                   <li>
                                     <p>
                                       <input type="checkbox" id="model_list8">
-                                      <label for="model_list8">Polar - 92 EMC-MON</label>
+                                      <label for="model_list8">SiasPrint - Progress 760 TS UV</label>
                                     </p>
                                   </li>
                                   <li>
                                     <p>
                                       <input type="checkbox" id="model_list9">
-                                      <label for="model_list9">Rollem - Champion 990</label>
+                                      <label for="model_list9">SiasPrint - Progress 760 TS UV</label>
                                     </p>
                                   </li>
                                   <li>
                                     <p>
                                       <input type="checkbox" id="model_list10">
-                                      <label for="model_list10">Zechini - Saturno</label>
+                                      <label for="model_list10">SiasPrint - Progress 760 TS UV</label>
                                     </p>
                                   </li>
                                 </ul>
@@ -782,11 +839,10 @@
                       <div class="panel-group" id="accordion9" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                           <div class="panel-heading" role="tab" id="year_list">
-                            <h4 class="panel-title">
-                              <a class="" role="button" data-toggle="collapse" data-parent="#accordion9" href="#collapseYear_list" aria-expanded="true" aria-controls="collapseYear_list">
-                                <h3>Year</h3>
-                              </a>
-                            </h4>
+                            <div class="panel-title">
+                              <h3>Year</h3>
+                              <a class="" role="button" data-toggle="collapse" data-parent="#accordion9" href="#collapseYear_list" aria-expanded="true" aria-controls="collapseYear_list"></a>
+                            </div>
                           </div>
                           <div id="collapseYear_list" class="panel-collapse in" role="tabpanel" aria-labelledby="year_list" aria-expanded="true">
                             <div class="panel-body">
@@ -1386,7 +1442,7 @@
             </a>
           </div>
           <div class="machine_list1">
-            <h4>See Similar Polar</h4>
+            <h4>Recently Added Used Machines</h4>
             <div class="grid_sec12">
               <div class="grid_content1">
                 <a href="#">
@@ -1436,88 +1492,59 @@
                   </div>
                 </a>
               </div>
+              <div class="grid_content1">
+                <a href="#">
+                  <figure>
+                    <img src="https://Hashbrown.azureedge.net/machinedalalimages/Machine/131394280217570999.jpg" alt="machine" />
+                  </figure>
+                  <div class="innercontent_12">
+                    <h5>SORS-315</h5>
+                    <h6>Folding Machine</h6>
+                    <p>1999</p>
+                  </div>
+                </a>
+              </div>
+              <div class="grid_content1">
+                <a href="#">
+                  <figure>
+                    <img src="https://Hashbrown.azureedge.net/machinedalalimages/Machine/131394280217570999.jpg" alt="machine" />
+                  </figure>
+                  <div class="innercontent_12">
+                    <h5>SORS-315</h5>
+                    <h6>Folding Machine</h6>
+                    <p>1999</p>
+                  </div>
+                </a>
+              </div>
+              <div class="grid_content1">
+                <a href="#">
+                  <figure>
+                    <img src="https://Hashbrown.azureedge.net/machinedalalimages/Machine/131394280217570999.jpg" alt="machine" />
+                  </figure>
+                  <div class="innercontent_12">
+                    <h5>SORS-315</h5>
+                    <h6>Folding Machine</h6>
+                    <p>1999</p>
+                  </div>
+                </a>
+              </div>
+              <div class="grid_content1">
+                <a href="#">
+                  <figure>
+                    <img src="https://Hashbrown.azureedge.net/machinedalalimages/Machine/131394280217570999.jpg" alt="machine" />
+                  </figure>
+                  <div class="innercontent_12">
+                    <h5>SORS-315</h5>
+                    <h6>Folding Machine</h6>
+                    <p>1999</p>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
           <div class="machine_list1">
             <h4>See Similar Sheet Fed</h4>
             <div class="grid_sec12">
-              <div class="grid_content1">
-                <a href="#">
-                  <figure>
-                    <img src="https://Hashbrown.azureedge.net/machinedalalimages/Machine/131394280217570999.jpg" alt="machine" />
-                  </figure>
-                  <div class="innercontent_12">
-                    <h5>SORS-315</h5>
-                    <h6>Folding Machine</h6>
-                    <p>1999</p>
-                  </div>
-                </a>
-              </div>
-              <div class="grid_content1">
-                <a href="#">
-                  <figure>
-                    <img src="https://Hashbrown.azureedge.net/machinedalalimages/Machine/131394280217570999.jpg" alt="machine" />
-                  </figure>
-                  <div class="innercontent_12">
-                    <h5>SORS-315</h5>
-                    <h6>Folding Machine</h6>
-                    <p>1999</p>
-                  </div>
-                </a>
-              </div>
-              <div class="grid_content1">
-                <a href="#">
-                  <figure>
-                    <img src="https://Hashbrown.azureedge.net/machinedalalimages/Machine/131394280217570999.jpg" alt="machine" />
-                  </figure>
-                  <div class="innercontent_12">
-                    <h5>SORS-315</h5>
-                    <h6>Folding Machine</h6>
-                    <p>1999</p>
-                  </div>
-                </a>
-              </div>
-              <div class="grid_content1">
-                <a href="#">
-                  <figure>
-                    <img src="https://Hashbrown.azureedge.net/machinedalalimages/Machine/131394280217570999.jpg" alt="machine" />
-                  </figure>
-                  <div class="innercontent_12">
-                    <h5>SORS-315</h5>
-                    <h6>Folding Machine</h6>
-                    <p>1999</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="machine_list1">
-            <h4>See Similar Glutien</h4>
-            <div class="grid_sec12">
-              <div class="grid_content1">
-                <a href="#">
-                  <figure>
-                    <img src="https://Hashbrown.azureedge.net/machinedalalimages/Machine/131394280217570999.jpg" alt="machine" />
-                  </figure>
-                  <div class="innercontent_12">
-                    <h5>SORS-315</h5>
-                    <h6>Folding Machine</h6>
-                    <p>1999</p>
-                  </div>
-                </a>
-              </div>
-              <div class="grid_content1">
-                <a href="#">
-                  <figure>
-                    <img src="https://Hashbrown.azureedge.net/machinedalalimages/Machine/131394280217570999.jpg" alt="machine" />
-                  </figure>
-                  <div class="innercontent_12">
-                    <h5>SORS-315</h5>
-                    <h6>Folding Machine</h6>
-                    <p>1999</p>
-                  </div>
-                </a>
-              </div>
               <div class="grid_content1">
                 <a href="#">
                   <figure>
@@ -1676,20 +1703,6 @@
       </div>
     </div>
   </div>
-<!-- <section class="newBrands_sec4">
-    <div class="newBrands_sec41">
-      <div class="container">
-        <div class="newBrands_sec42">
-          <h3>Newsletter</h3>
-          <p>Subscribe to our <span>newsletter</span> and recieve latest industry news and updates on freshly listed graphic machines and equipment.</p>
-          <div class="newNewsletter_btn">
-            <input type="text" onkeypress="event.stopPropagation(); if (event.keyCode===13){ return false; }" id="txt_emailNewsLetter" placeholder="Enter your email" onfocus="this.removeAttribute('readonly');">
-            <a href="javascript:void(0);" id="newsLetter">Subscribe</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
   <section class="newBrands_sec4">
     <div class="newBrands_sec41">
       <div class="container">
@@ -1801,6 +1814,23 @@
   </footer>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.js"></script>
+  <!-- ====== COLLAPSE ALL SCRIPT ====== -->
+  <script>
+    $(document).ready(function(){
+      $('#collapseBtn').click(function(){
+        if($(this).hasClass('collapseBtn')){
+          $('.categories_list .panel-title a:not(.collapsed').click();
+          $(this).removeClass('collapseBtn').addClass('expandBtn');
+        }
+        else {
+          $('.categories_list .panel-title a.collapsed').click();
+          $(this).removeClass('expandBtn').addClass('collapseBtn');
+        }
+      })
+    });
+  </script>
+  <!-- ====== COLLAPSE ALL SCRIPT END ====== -->
+  <!-- ====== COLLAPSE SINGLE SCRIPT ====== -->
   <script>
     $(document).ready(function(){
       $('.show_list').click(function(){
@@ -1825,6 +1855,7 @@
       });
     });
   </script>
+  <!-- ====== COLLAPSE SINGLE SCRIPT END ====== -->
   <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
 <script>
   var $min = $('.min'),
